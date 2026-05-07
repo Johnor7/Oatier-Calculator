@@ -8,24 +8,20 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; color: #1a1a1a; max-width: 720px; margin: 0 auto; }
 
-  /* Brand header */
   .brand-header { background: #7C3AED; padding: 20px 32px; }
-  .brand-header img { height: 44px; width: auto; display: block; }
+  .brand-name { color: #fff; font-size: 20px; font-weight: 600; }
   .brand-bar { background: #F5C518; height: 7px; }
 
-  /* Content */
   .content { padding: 36px 32px 40px; }
   h1 { font-size: 18px; font-weight: 500; margin-bottom: 4px; }
   .meta { font-size: 12px; color: #888; margin-bottom: 2rem; }
   .section-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #aaa; margin-bottom: 20px; }
 
-  /* Sliders */
   .slider-row { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
   .slider-label { font-size: 13px; color: #666; min-width: 90px; }
   .slider-track-wrap { flex: 1; position: relative; padding-top: 28px; }
   input[type=range] { width: 100%; accent-color: #7C3AED; display: block; }
 
-  /* Realistic marker badge */
   .realistic-badge {
     position: absolute;
     top: 0;
@@ -54,7 +50,6 @@
 
   .slider-val { font-size: 13px; font-weight: 500; min-width: 52px; text-align: right; }
 
-  /* Table */
   table { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
   th { padding: 10px 12px; border-bottom: 1px solid #e0e0e0; font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; text-align: center; color: #888; }
   th:first-child { text-align: left; }
@@ -72,4 +67,129 @@
 <body>
 
 <div class="brand-header">
-  <img src="data:image/avif;base64,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
+  <div class="brand-name">Oatier</div>
+</div>
+<div class="brand-bar"></div>
+
+<div class="content">
+
+<h1>LinkedIn pilot scenario calculator</h1>
+<p class="meta">60-day pilot · €1,800 ad spend + VAT · Lead generation campaign</p>
+
+<p class="section-label">Inputs / Variables</p>
+
+<div class="slider-row">
+  <span class="slider-label">CPL</span>
+  <div class="slider-track-wrap">
+    <span class="realistic-badge" id="cpl-mark">est. €72</span>
+    <input type="range" id="cpl" min="20" max="100" step="1" value="72">
+  </div>
+  <span class="slider-val" id="cpl-out">€72</span>
+</div>
+
+<div class="slider-row">
+  <span class="slider-label">Close rate</span>
+  <div class="slider-track-wrap">
+    <span class="realistic-badge" id="cr-mark">est. 17%</span>
+    <input type="range" id="cr" min="10" max="25" step="1" value="17">
+  </div>
+  <span class="slider-val" id="cr-out">17%</span>
+</div>
+
+<div class="slider-row">
+  <span class="slider-label">LTV</span>
+  <div class="slider-track-wrap">
+    <input type="range" id="ltv" min="300" max="900" step="50" value="300">
+  </div>
+  <span class="slider-val" id="ltv-out">€300</span>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:36%;">Metric</th>
+      <th class="th-neg">Pessimistic</th>
+      <th>Realistic</th>
+      <th class="th-pos">Optimistic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>CPL</td><td id="r-cpl-p"></td><td id="r-cpl-r"></td><td id="r-cpl-o"></td></tr>
+    <tr><td>Close rate</td><td id="r-cr-p"></td><td id="r-cr-r"></td><td id="r-cr-o"></td></tr>
+    <tr><td>Leads generated</td><td id="r-leads-p"></td><td id="r-leads-r"></td><td id="r-leads-o"></td></tr>
+    <tr><td>Customers acquired</td><td id="r-cust-p"></td><td id="r-cust-r"></td><td id="r-cust-o"></td></tr>
+    <tr><td>LTV returned</td><td id="r-ltv-p"></td><td id="r-ltv-r"></td><td id="r-ltv-o"></td></tr>
+    <tr><td>Fee</td><td class="neg">−€500</td><td class="neg">−€500</td><td class="neg">−€500</td></tr>
+    <tr><td>Net P&amp;L</td><td id="r-pnl-p"></td><td id="r-pnl-r"></td><td id="r-pnl-o"></td></tr>
+  </tbody>
+</table>
+
+<div class="callout" id="callout"></div>
+<p class="footer">Oatier · London & M25 LinkedIn pilot · April 2026 · Confidential</p>
+
+</div>
+
+<script>
+const TOTAL = 1800;
+const BUDGET = 1800;
+const FEE = 500;
+
+function markPosition(markId, inputId) {
+  const input = document.getElementById(inputId);
+  const min = parseFloat(input.min);
+  const max = parseFloat(input.max);
+  const val = parseFloat(input.defaultValue);
+  const pct = (val - min) / (max - min) * 100;
+  document.getElementById(markId).style.left = pct + '%';
+}
+
+function calc(cpl, crPct, ltv) {
+  const leads = Math.round(BUDGET / cpl);
+  const customers = Math.round(leads * (crPct / 100));
+  const ltvRet = customers * ltv;
+  const pnl = ltvRet - TOTAL - FEE;
+  return { cpl, crPct, leads, customers, ltvRet, pnl };
+}
+
+function fmt(n) {
+  return (n < 0 ? '−' : '') + '€' + Math.abs(Math.round(n)).toLocaleString();
+}
+
+function update() {
+  const cpl = parseInt(document.getElementById('cpl').value);
+  const cr  = parseInt(document.getElementById('cr').value);
+  const ltv = parseInt(document.getElementById('ltv').value);
+
+  document.getElementById('cpl-out').textContent = '€' + cpl;
+  document.getElementById('cr-out').textContent  = cr + '%';
+  document.getElementById('ltv-out').textContent = '€' + ltv;
+
+  const pess = calc(Math.min(cpl + 15, 100), Math.max(cr - 5, 10), ltv);
+  const real = calc(cpl, cr, ltv);
+  const opti = calc(Math.max(cpl - 15, 20), Math.min(cr + 5, 30), ltv);
+
+  [['p', pess], ['r', real], ['o', opti]].forEach(([s, d]) => {
+    document.getElementById('r-cpl-'   + s).textContent = '€' + d.cpl;
+    document.getElementById('r-cr-'    + s).textContent = d.crPct + '%';
+    document.getElementById('r-leads-' + s).textContent = d.leads;
+    document.getElementById('r-cust-'  + s).textContent = d.customers;
+    document.getElementById('r-ltv-'   + s).textContent = fmt(d.ltvRet);
+    const el = document.getElementById('r-pnl-' + s);
+    el.textContent = fmt(d.pnl);
+    el.className = d.pnl >= 0 ? 'pos' : 'neg';
+  });
+
+  const c = document.getElementById('callout');
+  c.textContent = opti.pnl >= 0
+    ? 'Optimistic scenario returns ' + fmt(opti.pnl) + ' profit. Campaign viable at these inputs.'
+    : 'Optimistic scenario: ' + opti.customers + ' customers acquired, ' + fmt(opti.pnl) + ' net. Retention beyond 12 months tips this into profit.';
+}
+
+markPosition('cpl-mark', 'cpl');
+markPosition('cr-mark', 'cr');
+
+['cpl','cr','ltv'].forEach(id => document.getElementById(id).addEventListener('input', update));
+update();
+</script>
+</body>
+</html>
