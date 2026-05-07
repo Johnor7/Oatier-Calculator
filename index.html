@@ -8,20 +8,24 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; color: #1a1a1a; max-width: 720px; margin: 0 auto; }
 
+  /* Brand header */
   .brand-header { background: #7C3AED; padding: 20px 32px; }
-  .brand-name { color: #fff; font-size: 20px; font-weight: 600; }
+  .brand-header img { height: 44px; width: auto; display: block; }
   .brand-bar { background: #F5C518; height: 7px; }
 
+  /* Content */
   .content { padding: 36px 32px 40px; }
   h1 { font-size: 18px; font-weight: 500; margin-bottom: 4px; }
   .meta { font-size: 12px; color: #888; margin-bottom: 2rem; }
   .section-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #aaa; margin-bottom: 20px; }
 
+  /* Sliders */
   .slider-row { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
   .slider-label { font-size: 13px; color: #666; min-width: 90px; }
   .slider-track-wrap { flex: 1; position: relative; padding-top: 28px; }
   input[type=range] { width: 100%; accent-color: #7C3AED; display: block; }
 
+  /* Realistic marker badge */
   .realistic-badge {
     position: absolute;
     top: 0;
@@ -50,6 +54,7 @@
 
   .slider-val { font-size: 13px; font-weight: 500; min-width: 52px; text-align: right; }
 
+  /* Table */
   table { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
   th { padding: 10px 12px; border-bottom: 1px solid #e0e0e0; font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; text-align: center; color: #888; }
   th:first-child { text-align: left; }
@@ -67,7 +72,7 @@
 <body>
 
 <div class="brand-header">
-  <div class="brand-name">Oatier</div>
+  <img src="data:image/avif;base64,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" alt="Oatier">
 </div>
 <div class="brand-bar"></div>
 
@@ -103,6 +108,7 @@
   </div>
   <span class="slider-val" id="ltv-out">€300</span>
 </div>
+
 
 <table>
   <thead>
